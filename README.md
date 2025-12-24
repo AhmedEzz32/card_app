@@ -11,24 +11,6 @@ A Flutter-based digital membership card application that allows users to registe
 - **Local Storage**: Stores memberships using SharedPreferences.
 - **Animated UI**: Includes animations for better user experience in scanning and card display.
 
-## Setup
-
-1. Ensure Flutter SDK is installed (version 3.0 or higher recommended).
-2. Clone or download the project.
-3. Run `flutter pub get` to install dependencies.
-4. For Android: Camera permissions are configured in `AndroidManifest.xml`.
-5. For iOS: Camera usage is described in `Info.plist`.
-
-## Running the App
-
-- Connect an Android/iOS device or start an emulator/simulator.
-- Run `flutter run` to launch the app.
-
-## Building the App
-
-- For Android APK: `flutter build apk`
-- For iOS (on Mac): `flutter build ios`
-
 ## Usage
 
 1. **Registration**: On first launch, enter your name and contact details to register.
@@ -46,4 +28,7 @@ A Flutter-based digital membership card application that allows users to registe
 
 ## Screenshots
 
-(Add screenshots here if available)
+<img src="https://github.com/user-attachments/assets/7270eeb0-cfa3-4001-a230-8019791e5262" width="250"/>
+<img src="https://github.com/user-attachments/assets/dc293c86-04c1-4f12-b3ad-e03884963546" width="250"/>
+<img src="https://github.com/user-attachments/assets/2179fea8-33df-43a9-934f-f28ab3a22adf" width="250"/>
+<img src="https://github.com/user-attachments/assets/88cbe582-0422-4ec9-ba2c-a0eb0dad81b7" width="250"/>
