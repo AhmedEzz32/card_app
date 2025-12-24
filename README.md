@@ -27,14 +27,10 @@ A Flutter-based digital membership card application that allows users to registe
 - `uuid`: Generates unique identifiers (optional).
 
 ## Screenshots
-<img src="[https://github.com/user-attachments/assets/7270eeb0-cfa3-4001-a230-8019791e5262)" width="250"/>
-<img src="[https://github.com/user-attachments/assets/dc293c86-04c1-4f12-b3ad-e03884963546)" width="250"/>
-<img src="[https://github.com/user-attachments/assets/2179fea8-33df-43a9-934f-f28ab3a22adf)" width="250"/>
-<img src="[https://github.com/user-attachments/assets/88cbe582-0422-4ec9-ba2c-a0eb0dad81b7)" width="250"/>
-![WhatsApp Image 2025-12-24 at 19 16 49](https://github.com/user-attachments/assets/526515ee-da40-4d2b-b3d6-02fddd022cc0)
-![WhatsApp Image 2025-12-24 at 19 16 47](https://github.com/user-attachments/assets/255ffd00-12b6-4789-9f41-ec8fc6acd551)
-![WhatsApp Image 2025-12-24 at 19 16 48](https://github.com/user-attachments/assets/c212aa66-2462-40bf-8c40-c269e2ef65e9)
-![WhatsApp Image 2025-12-24 at 19 16 48(1)](https://github.com/user-attachments/assets/f1c623b7-fc77-4150-bc9b-3cf043b34063)
+<img src="https://github.com/user-attachments/assets/526515ee-da40-4d2b-b3d6-02fddd022cc0" width="250"/>
+<img src="https://github.com/user-attachments/assets/255ffd00-12b6-4789-9f41-ec8fc6acd551" width="250"/>
+<img src="https://github.com/user-attachments/assets/c212aa66-2462-40bf-8c40-c269e2ef65e9" width="250"/>
+<img src="https://github.com/user-attachments/assets/f1c623b7-fc77-4150-bc9b-3cf043b34063" width="250"/>
 
 
 
