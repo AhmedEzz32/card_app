@@ -129,7 +129,27 @@ class ScanScreenState extends State<ScanScreen> {
           Expanded(
             flex: 1,
             child: Center(
-              child: Text(result),
+              child: result.startsWith('Valid membership')
+                  ? RichText(
+                      text: TextSpan(
+                        children: [
+                          TextSpan(
+                            text: 'Valid membership ',
+                            style: TextStyle(color: Colors.green, fontWeight: FontWeight.bold, fontSize: 18),
+                          ),
+                          TextSpan(
+                            text: result.split(' for ')[1],
+                            style: TextStyle(color: Colors.black, fontSize: 16, fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
+                    )
+                  : Text(
+                      result,
+                      style: result == 'Expired membership'
+                          ? TextStyle(color: Colors.red, fontWeight: FontWeight.bold, fontSize: 18)
+                          : TextStyle(color: Colors.black, fontSize: 16),
+                    ),
             ),
           ),
         ],

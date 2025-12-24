@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
 import '../models/membership.dart';
@@ -68,43 +69,55 @@ class RegistrationScreenState extends State<RegistrationScreen> {
       appBar: AppBar(title: Text('Registration')),
       body: Padding(
         padding: EdgeInsets.all(16),
-        child: Form(
-          key: _formKey,
+        child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              TextFormField(
-                controller: _nameController,
-                decoration: InputDecoration(labelText: 'Name'),
-                validator: (value) => value!.isEmpty ? 'Enter name' : null,
-                onSaved: (value) => name = value!,
-                keyboardType: TextInputType.name,
-                textInputAction: TextInputAction.next,
+              Lottie.asset(
+                'assets/animations/lottie.json',
+                height: 400,
+                width: 400,
               ),
-              SizedBox(height: 20),
-              TextFormField(
-                controller: _contactController,
-                decoration: InputDecoration(labelText: 'Email or Mobile'),
-                validator: (value) {
-                  if (value!.isEmpty) return 'Enter contact';
-                  final emailRegex = RegExp(r'^[^@]+@[^@]+\.[^@]+$');
-                  final phoneRegex = RegExp(r'^\+?[0-9]{10,15}$');
-                  if (emailRegex.hasMatch(value) || phoneRegex.hasMatch(value)) {
-                    return null;
-                  }
-                  return 'Enter a valid email or phone number';
-                },
-                onSaved: (value) => contact = value!,
-              ),
-              SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: _register,
-                child: Text('Register'),
+              Form(
+                key: _formKey,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    TextFormField(
+                      controller: _nameController,
+                      decoration: InputDecoration(labelText: 'Name'),
+                      validator: (value) => value!.isEmpty ? 'Enter name' : null,
+                      onSaved: (value) => name = value!,
+                      keyboardType: TextInputType.name,
+                      textInputAction: TextInputAction.next,
+                    ),
+                    SizedBox(height: 20),
+                    TextFormField(
+                      controller: _contactController,
+                      decoration: InputDecoration(labelText: 'Email or Mobile'),
+                      validator: (value) {
+                        if (value!.isEmpty) return 'Enter contact';
+                        final emailRegex = RegExp(r'^[^@]+@[^@]+\.[^@]+$');
+                        final phoneRegex = RegExp(r'^\+?[0-9]{10,15}$');
+                        if (emailRegex.hasMatch(value) || phoneRegex.hasMatch(value)) {
+                          return null;
+                        }
+                        return 'Enter a valid email or phone number';
+                      },
+                      onSaved: (value) => contact = value!,
+                    ),
+                    SizedBox(height: 20),
+                    ElevatedButton(
+                      onPressed: _register,
+                      child: Text('Register'),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
         ),
-      ),
+      )
     );
   }
 
