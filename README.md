@@ -27,10 +27,7 @@ A Flutter-based digital membership card application that allows users to registe
 - `uuid`: Generates unique identifiers (optional).
 
 ## Screenshots
-<img src="https://github.com/user-attachments/assets/526515ee-da40-4d2b-b3d6-02fddd022cc0" width="250"/>
-<img src="https://github.com/user-attachments/assets/255ffd00-12b6-4789-9f41-ec8fc6acd551" width="250"/>
-<img src="https://github.com/user-attachments/assets/c212aa66-2462-40bf-8c40-c269e2ef65e9" width="250"/>
-<img src="https://github.com/user-attachments/assets/f1c623b7-fc77-4150-bc9b-3cf043b34063" width="250"/>
-
-
-
+<img src="https://github.com/user-attachments/assets/255ffd00-12b6-4789-9f41-ec8fc6acd551" width="220"/>
+<img src="https://github.com/user-attachments/assets/f1c623b7-fc77-4150-bc9b-3cf043b34063" width="220"/>
+<img src="https://github.com/user-attachments/assets/c212aa66-2462-40bf-8c40-c269e2ef65e9" width="220"/>
+<img src="https://github.com/user-attachments/assets/526515ee-da40-4d2b-b3d6-02fddd022cc0" width="220"/>
